@@ -7,10 +7,31 @@
     "name": "ExampleIG"
   },
   {
-    "id": "MyPatient",
+    "id": "hosxp-patient",
     "type": "StructureDefinition",
-    "url": "http://example.org/StructureDefinition/MyPatient",
+    "url": "http://example.org/StructureDefinition/hosxp-patient",
     "version": "0.1.0",
-    "name": "MyPatient"
+    "name": "HosxpPatient"
+  },
+  {
+    "id": "phenotype",
+    "type": "StructureDefinition",
+    "url": "http://example.org/StructureDefinition/phenotype",
+    "version": "0.1.0",
+    "name": "Blood"
+  },
+  {
+    "id": "relatedPeople",
+    "type": "ValueSet",
+    "url": "http://example.org/ValueSet/relatedPeople",
+    "version": "0.1.0",
+    "name": "Related"
+  },
+  {
+    "id": "warfarin",
+    "type": "ValueSet",
+    "url": "http://example.org/ValueSet/warfarin",
+    "version": "0.1.0",
+    "name": "Warfar"
   }
 ]

@@ -2,16 +2,28 @@
   "package": "fhir.example",
   "version": "0.1.0",
   "fhirVersion": "4.0.1",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "http://example.org/StructureDefinition/phenotype",
+      "title": "Blood group: phenotype",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    }
+  ],
   "profiles": {
     "Patient": [
       {
-        "url": "http://example.org/StructureDefinition/MyPatient",
-        "title": "MyPatient"
+        "url": "http://example.org/StructureDefinition/hosxp-patient",
+        "title": "Hosxp-patient"
       }
     ]
   },
   "usage": {
+    "http://example.org/StructureDefinition/phenotype": [
+      "Patient"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],

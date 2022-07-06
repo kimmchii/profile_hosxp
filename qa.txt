@@ -1,15 +1,22 @@
 ﻿ExampleIG : Validation Results
 =========================================
 
-err = 0, warn = 0, info = 0
+err = 0, warn = 3, info = 0
 IG Publisher Version: 1.1.122
-Generated Tue Jul 05 11:25:08 UTC 2022. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://example.org)
- Build Errors : 0 / 0 / 0
+Generated Wed Jul 06 09:10:49 UTC 2022. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://example.org)
+ Build Errors : 0 / 1 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-fhir.example : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Patient-PatientExample : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-MyPatient : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hosxp-patient : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-phenotype : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-relatedPeople : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-warfarin : 0 / 0 / 1
 </table>
 == n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/relatedPeople.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 == fsh-generated/resources/ImplementationGuide-fhir.example.json ==
-== fsh-generated/resources/Patient-PatientExample.json ==
-== fsh-generated/resources/StructureDefinition-MyPatient.json ==
+== fsh-generated/resources/StructureDefinition-hosxp-patient.json ==
+WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/hosxp-patient'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-phenotype.json ==
+WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/phenotype'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/ValueSet-relatedPeople.json ==
+== fsh-generated/resources/ValueSet-warfarin.json ==

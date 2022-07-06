@@ -1,0 +1,41 @@
+{
+  "resourceType": "ValueSet",
+  "id": "warfarin",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  112143006 (ABO group phenotype)</li></ul></div>"
+  },
+  "url": "http://example.org/ValueSet/warfarin",
+  "version": "0.1.0",
+  "name": "Warfar",
+  "title": "phenotype",
+  "status": "active",
+  "date": "2022-07-06T09:10:35+00:00",
+  "publisher": "Example Publisher",
+  "contact": [
+    {
+      "name": "Example Publisher",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://example.org/example-publisher"
+        }
+      ]
+    }
+  ],
+  "description": "Codes describing blood group using phenotype, taken from SNOMED-CT.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "112143006"
+          }
+        ]
+      }
+    ]
+  }
+}

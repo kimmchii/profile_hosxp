@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="warfarin"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  112143006 (ABO group phenotype)</li></ul></div>
+  </text>
+  <url value="http://example.org/ValueSet/warfarin"/>
+  <version value="0.1.0"/>
+  <name value="Warfar"/>
+  <title value="phenotype"/>
+  <status value="active"/>
+  <date value="2022-07-06T09:10:35+00:00"/>
+  <publisher value="Example Publisher"/>
+  <contact>
+    <name value="Example Publisher"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="Codes describing blood group using phenotype, taken from SNOMED-CT."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="112143006"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

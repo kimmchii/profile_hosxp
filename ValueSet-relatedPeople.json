@@ -1,0 +1,33 @@
+{
+  "resourceType": "ValueSet",
+  "id": "relatedPeople",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-RoleCode.html\"><code>http://terminology.hl7.org/CodeSystem/v3-RoleCode</code></a></li></ul></div>"
+  },
+  "url": "http://example.org/ValueSet/relatedPeople",
+  "version": "0.1.0",
+  "name": "Related",
+  "title": "relationship Type",
+  "status": "active",
+  "date": "2022-07-06T09:10:35+00:00",
+  "publisher": "Example Publisher",
+  "contact": [
+    {
+      "name": "Example Publisher",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://example.org/example-publisher"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode"
+      }
+    ]
+  }
+}

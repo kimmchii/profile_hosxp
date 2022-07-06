@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="relatedPeople"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-RoleCode.html"><code>http://terminology.hl7.org/CodeSystem/v3-RoleCode</code></a></li></ul></div>
+  </text>
+  <url value="http://example.org/ValueSet/relatedPeople"/>
+  <version value="0.1.0"/>
+  <name value="Related"/>
+  <title value="relationship Type"/>
+  <status value="active"/>
+  <date value="2022-07-06T09:10:35+00:00"/>
+  <publisher value="Example Publisher"/>
+  <contact>
+    <name value="Example Publisher"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+    </include>
+  </compose>
+</ValueSet>

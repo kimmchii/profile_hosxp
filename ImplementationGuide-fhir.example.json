@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "ExampleIG",
   "status": "draft",
-  "date": "2022-07-05T11:24:55+00:00",
+  "date": "2022-07-06T09:10:35+00:00",
   "publisher": "Example Publisher",
   "contact": [
     {
@@ -333,25 +333,52 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/MyPatient"
+          "reference": "StructureDefinition/hosxp-patient"
         },
-        "name": "MyPatient",
-        "description": "An example profile of the Patient resource.",
+        "name": "Hosxp-patient",
+        "description": "A patient that is a type of fish.",
         "exampleBoolean": false
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Patient"
+            "valueString": "StructureDefinition:extension"
           }
         ],
         "reference": {
-          "reference": "Patient/PatientExample"
+          "reference": "StructureDefinition/phenotype"
         },
-        "name": "PatientExample",
-        "description": "An example of a patient with a license to krill.",
-        "exampleCanonical": "http://example.org/StructureDefinition/MyPatient"
+        "name": "Blood group: phenotype",
+        "description": "Categorize the blood group by using phenotype",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/relatedPeople"
+        },
+        "name": "relationship Type",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/warfarin"
+        },
+        "name": "phenotype",
+        "description": "Codes describing blood group using phenotype, taken from SNOMED-CT.",
+        "exampleBoolean": false
       }
     ],
     "page": {

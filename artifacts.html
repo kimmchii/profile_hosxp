@@ -129,7 +129,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#1">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#2">Example: Example Instances</a>
+         <a href="#2">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#3">Terminology: Value Sets</a>
       </li>
    </ul>
 </div>
@@ -148,20 +151,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-MyPatient.html"
-                     title="StructureDefinition/MyPatient">MyPatient</a>
+                  <a href="StructureDefinition-hosxp-patient.html"
+                     title="StructureDefinition/hosxp-patient">Hosxp-patient</a>
                </td>
                <td>
-<p>An example profile of the Patient resource.</p>
+<p>A patient that is a type of fish.</p>
 </td>
             </tr>
          </tbody>
       </table>
    </p>
    <a name="2"> </a>
-   <h3>Example: Example Instances </h3>
+   <h3>Structures: Extension Definitions </h3>
    <p>
-    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide</p>
 </p>
    <p>
       <table class="grid">
@@ -169,10 +172,39 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="Patient-PatientExample.html" title="Patient/PatientExample">PatientExample</a>
+                  <a href="StructureDefinition-phenotype.html"
+                     title="StructureDefinition/phenotype">Blood group: phenotype</a>
                </td>
                <td>
-<p>An example of a patient with a license to krill.</p>
+<p>Categorize the blood group by using phenotype</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="3"> </a>
+   <h3>Terminology: Value Sets </h3>
+   <p>
+    <p>These define sets of codes used by systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-relatedPeople.html" title="ValueSet/relatedPeople">relationship Type</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-warfarin.html" title="ValueSet/warfarin">phenotype</a>
+               </td>
+               <td>
+<p>Codes describing blood group using phenotype, taken from SNOMED-CT.</p>
 </td>
             </tr>
          </tbody>
@@ -202,7 +234,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Example Publisher</a>.  Package fhir.example#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 5, 2022 11:24+0000">2022-07-05</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Example Publisher</a>.  Package fhir.example#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 6, 2022 09:10+0000">2022-07-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

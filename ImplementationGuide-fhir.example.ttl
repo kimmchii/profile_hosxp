@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "ExampleIG"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-07-05T11:24:55+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-07-06T09:10:35+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Example Publisher"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -317,29 +317,53 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.org/StructureDefinition/MyPatient>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/MyPatient" ]
+         fhir:link <http://example.org/StructureDefinition/hosxp-patient>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hosxp-patient" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MyPatient" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example profile of the Patient resource." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Hosxp-patient" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A patient that is a type of fish." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 1;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Patient" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.org/Patient/PatientExample>;
-         fhir:Reference.reference [ fhir:value "Patient/PatientExample" ]
+         fhir:link <http://example.org/StructureDefinition/phenotype>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/phenotype" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PatientExample" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example of a patient with a license to krill." ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://example.org/StructureDefinition/MyPatient";
-         fhir:link <http://example.org/StructureDefinition/MyPatient>
-       ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Blood group: phenotype" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Categorize the blood group by using phenotype" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/ValueSet/relatedPeople>;
+         fhir:Reference.reference [ fhir:value "ValueSet/relatedPeople" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "relationship Type" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/ValueSet/warfarin>;
+         fhir:Reference.reference [ fhir:value "ValueSet/warfarin" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "phenotype" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes describing blood group using phenotype, taken from SNOMED-CT." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
